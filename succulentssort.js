@@ -18,7 +18,7 @@ const succulentPlants = [
     { name: 'String of Dolphins', latin: 'Senecio peregrinus', link: 'string-of-dolphins.html', image: 'string-of-dolphins.jpg', price: 22 }, // New
     { name: 'Fishbone Cactus', latin: 'Epiphyllum anguliger', link: 'fishbone-cactus.html', image: 'fishbone-cactus.jpg', price: 35 }, // New
     { name: 'Fairy Castle Cactus', latin: 'Acanthocereus tetragonus', link: 'fairy-castle-cactus.html', image: 'fairy-castle-cactus.jpg', price: 30 }, // New
-    { name: 'Mistletoe Cactus', latin: 'Rhipsalis baccifera', link: 'mistletoe-cactus.html', image: 'mistletoe-cactus.jpg', price: 18 } // New
+    { name: 'Mistletoe Cactus', latin: 'Rhipsalis baccifera', link: 'mistletoe-cactus.html', image: 'mistletoe-cactus.jpg', price: 18 } // Newk
 ];   
 // Function to Display the List of Plants
 function displayPlants(plants) {
