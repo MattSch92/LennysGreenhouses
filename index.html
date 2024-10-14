@@ -1,12 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL=subfolder/index.html">
-    <title>Redirecting...</title>
-</head>
-<body>
-    <p>If you are not redirected automatically, <a href="subfolder/index.html">click here</a>.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lenny's Greenhouses</title>
+        <link rel="icon" href="/Main/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/Main/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
+  
+    </head>
+
+    <body>
+        <!-- Top Banner -->
+         <header class="top-banner">
+            <div class="banner-content">
+                <div class="logo">
+                    <a href="/Main/index.html">
+                        <img src="/images/tpslogo.png" alt="Company Logo">
+                    </a>
+                </div>
+                <a href="#" class="cart-link">My Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="dropdown">
+                    <button class="dropbtn">My Account <i class="fa-regular fa-user"></i></button>
+                    <div class="dropdown-content">
+                    <!-- Login form -->
+                     <div id="login-form">
+                        <h3>Login</h3>
+                        <form onsubmit="return loginUser()">
+                            <label for="login-username">Username:</label>
+                            <input type="text" id="login-username" required>
+
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" required>
+
+                            <button type="submit">Login</button>
+                        </form>
+                    <!-- REMEMBER THE "#" HREF HERE -->
+                        <p>Don't have an account? <a href="#" id="show-register">Register Here</a></p>
+                     </div>
+                    <!-- Registration Form -->
+                     <div id="register-form" style="display: none;">
+                        <h3>Register</h3>
+                        <form onsubmit="return registerUser()">
+                            <label for="register-username">Username:</label>
+                            <input type="text" id="register-username" required>
+
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="reguster-email" required>
+
+                            <label for="register-password">Password:</label>
+                            <input type="password" id="register=password" required>
+
+                            <button type="submit">Register</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+                     </div>
+
+                    <button id="logout-button" style="display: none;" onclick="logoutUser()">Log Out</button>
+                    <a href="/Main/profilepage.html" id="profile-link" style="display: none;" onclick="goToProfile()">Profile</a>
+                </div>
+            </div>
+            
+         </header>
+
+         <!-- Company Information -->
+          <section class="company-info">
+            <ul class="list">
+                <li>
+                    <i class="fa-brands fa-envira"></i>
+                    <a href="tel:1234567890">(123) 456-7890</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-envira"></i>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Seoul, South Korea" target="_blank">328 Greenie Avenue, Chewy ST, 32894</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-envira"></i>
+                    Open 7 Days a Week, 10am-7pm
+                </li>
+                <li>
+                    <i class="fa-brands fa-envira"></i>
+                    <a href="/Main/newsletter.html">Sign up for our newsletter here</a>
+                </li>
+            </ul>
+
+            <div class="introtext">
+                <p>
+                    Discover our wide selection of Exotic, Tropical, Flowering, and Edible plants
+                </p>
+            </div>
+
+            <div class="socials">
+                <li><a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="yelp.com"><i class="fa-brands fa-yelp"></i></a></li>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="plant-search" placeholder="Search products here..." onkeyup="searchPlants()" autocomplete="off">
+                <div id="results" class="dropdown-results"></div>
+                <button type="submit">Search</button>
+            </div>
+        </section>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="/Main/newplants.html">New</a>
+            <a href="/Main/tropicals.html">Tropicals</a>
+            <a href="/Main/flowering.html">Flowering</a>
+            <a href="/Main/succulents.html">Succulents & Cacti</a>
+            <a href="/Main/edible.html">Edible</a>
+            <a href="/Main/airpurifying.html">Air Purifying</a>
+            <a href="/Main/all.html">All</a>
+        </nav>
+
+        <!-- Image Gallery -->
+        <section class="image-gallery">
+            <div class="gallery-wrapper">
+                <button id="prev" class="gallery-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="gallery-container">
+                    <div class="image-slider">
+                        <!-- Image 1 -->
+                        <div class="image-wrapper">
+                            <img src="/images/hibiscus-yellow.jpg" alt="slide 1">
+                            <div class="image-info">
+                                <h1>Hibiscus (Yellow)</h1>
+                                <h2>Hibiscus rosa-sinensis</h2>
+                            </div>
+                            <div class="image-links">
+                                <a href="plants/hibiscus-yellow.html">See More<i class="fa-solid fa-chevron-right"></i></a>
+                                <a href="/Main/newplants.html">New Arrivals<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Image 2-->
+                        <div class="image-wrapper">
+                            <img src="/images/bird-of-paradise.jpg" alt="slide 2">
+                            <div class="image-info">
+                                <h1>Bird of Paradise</h1>
+                                <h2>Strelitzia reginae</h2>
+                            </div>
+                            <div class="image-links">
+                                <a href="plants/bird-of-paradise.html">See More<i class="fa-solid fa-chevron-right"></i></a>
+                                <a href="/Main/tropicals.html">Tropicals<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="image-wrapper">
+                            <img src="/images/christmas-cactus.jpg" alt="slide 3">
+                            <div class="image-info">
+                                <h1>Christmas Cactus</h1>
+                                <h2>Schlumbergera bridgesii</h2>
+                            </div>
+                            <div class="image-links">
+                                <a href="plants/christmas-cactus.html">See More<i class="fa-solid fa-chevron-right"></i></a>
+                                <a href="/Main/succulents.html">Succulents<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="next" class="gallery-btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Indicator bar for slides -->
+            <div class="indicator-bar">
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </section>
+
+        <!-- Plant Categories -->
+        <section class="plant-categories">
+            <div class="plant-category">
+                <p>New Arrivals</p>
+                <a href="/Main/newplants.html"><img src="/images/begonia.jpg" alt="Plant Type 1"></a>
+            </div>
+
+            <div class="plant-category">
+                <p>Most Popular</p>
+                <a href="#"><img src="/images/desertrose.jpg" alt="Plant Type 2"></a>
+            </div>
+
+            <div class="plant-category">
+                <p>On Sale</p>
+                <a href="#"><img src="/images/cot.jpg" alt="Plant Type 3"></a>
+            </div>
+
+            <div class="plant-category">
+                <p>Edible</p>
+                <a href="/Main/edible.html"><img src="/images/lemontree.jpg" alt="Plant Type 4"></a>
+            </div>
+        </section>
+
+        <!-- SCRIPTS -->
+        <script src="/Scripts/scripts.js"></script>
+        <script src="/Scripts/search.js"></script>
+        <script src="/Scripts/auth.js"></script>
+
+    </body>
+
+    <footer>
+        <section class="footer">
+            <h1>Lenny's Greenhouses 2024®</h1>
+            <h1>(123) 456-7890</h1>
+            <h1>328 Greenie Avenue, Chewy ST, 32894</h1>
+        </section>
+
+        
+    </footer>
 </html>
