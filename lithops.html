@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenny's Greenhouses - Lithops</title>
+    <link rel="stylesheet" href="/Main/plantpages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Top Banner -->
+    <header class="top-banner">
+        <div class="banner-content">
+            <div class="logo">
+                <img src="images/tpslogo.png" alt="Company Logo">
+            </div>
+            <a href="#" class="cart-link">My Cart <i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="dropdown">
+                <button class="dropbtn">My Account <i class="fa-regular fa-user"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Company Information -->
+    <section class="company-info">
+        <ul class="list">
+            <li>
+                <i class="fa-brands fa-envira"></i>
+                <a href="tel:1234567890">(123) 456-7890</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-envira"></i>
+                <a href="https://www.google.com/maps/search/?api=1&query=Seoul, South Korea" target="_blank">328 Greenie Avenue, Chewy ST, 32894</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-envira"></i>
+                Open 7 Days a Week, 10am-7pm
+            </li>
+            <li>
+                <i class="fa-brands fa-envira"></i>
+                <a href="/Main/newsletter.html">Sign up for our newsletter here</a>
+            </li>
+        </ul>
+
+        <div class="introtext">
+            <p>
+              Discover our wide selection of Exotic, Tropical, Flowering, and Edible plants  
+            </p>
+        </div>
+
+        <div class="socials">
+            <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.yelp.com"><i class="fa-brands fa-yelp"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="plant-search" placeholder="Search products..." onkeyup="searchPlants()" autocomplete="off">
+            <div id="results" class="dropdown-results"></div>
+            <button type="submit">Search</button>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/Main/index.html">Home</a>
+        <a href="/Main/newplants.html">New</a>
+        <a href="/Main/flowering.html">Flowering</a>
+        <a href="/Main/succulents.html">Succulents & Cacti</a>
+        <a href="/Main/edible.html">Edible</a>
+        <a href="/Main/airpurifying.html">Air Purifying</a>
+        <a href="/Main/all.html">All</a>
+    </nav>
+
+    <!-- Product Information Section -->
+<section class="Product-Information">
+    <div class="product-container">
+        <!-- Left Column: Image -->
+        <div class="product-image">
+            <img src="images/lithops.jpg" alt="Plant Image">
+        </div>
+
+        <!-- Right Column: Text and Controls -->
+        <div class="product-details">
+            <h2>Lithops</h2>
+            <h3>Lithops aucampiae</h3>
+            <p>Often called "living stones," Lithops are fascinating succulents that resemble small, colorful pebbles. These unique plants have evolved to blend in with their surroundings in the arid regions of southern Africa, making them masters of camouflage. Lithops require minimal water and thrive in well-draining soil, making them ideal for small indoor pots or rock gardens. With the right care, they produce stunning, daisy-like flowers in autumn. Their compact size and intriguing appearance make them perfect for collectors or anyone looking to add a touch of natural artistry to their home decor.</p>
+            <p class="product-price">$30.00</p>
+
+            <!-- Add to Cart and Quantity Controls -->
+            <div class="cart-controls">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="quantity-selector">
+                    <button class="decrease-quantity">-</button>
+                    <input type="number" min="1" value="1" class="quantity-input">
+                    <button class="increase-quantity">+</button>
+                </div>
+            </div>
+
+            <!-- Add to Favorites Button -->
+            <button class="add-to-favorites">
+                <i class="fa fa-heart"></i> Add to Favorites
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Plant Categories -->
+    <section class="plant-categories">
+        <div class="plant-category">
+            <p>New Arrivals</p>
+            <a href="/Main/newplants.html"><img src="images/begonia.jpg" alt="Plant Type 1"></a>
+        </div>
+        <div class="plant-category">
+            <p>Most Popular</p>
+            <a href="/Main/popular.html"><img src="images/desertrose.jpg" alt="Plant Type 2"></a>
+        </div>
+        <div class="plant-category">
+            <p>On Sale</p>
+            <a href="/Main/sale.html"><img src="images/cot.jpg" alt="Plant Type 3"></a>
+        </div>
+        <div class="plant-category">
+            <p>Edible</p>
+            <a href="/Main/edible.html"><img src="images/lemontree.jpg" alt="Plant Type 4"></a>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script src="search.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+</html>
