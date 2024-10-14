@@ -1,19 +1,19 @@
 // Flowering Plant Data Array with Prices
 const floweringPlants = [
-    { name: 'Peace Lily', latin: 'Spathiphyllum wallisii', link: '/peace-lily.html', image: '/images/peace-lily.jpg', price: 32 },
-    { name: 'African Violet', latin: 'Saintpaulia ionantha', link: '/african-violet.html', image: '/images/african-violet.jpg', price: 28 },
-    { name: 'Hibiscus', latin: 'Hibiscus rosa-sinensis', link: '/hibiscus.html', image: '/images/hibiscus.jpg', price: 45 },
-    { name: 'Orchid', latin: 'Phalaenopsis', link: '/orchid.html', image: '/images/orchid.jpg', price: 50 },
-    { name: 'Anthurium', latin: 'Anthurium andraeanum', link: '/anthurium.html', image: '/images/anthurium.jpg', price: 38 },
-    { name: 'Jasmine', latin: 'Jasminum polyanthum', link: '/jasmine.html', image: '/images/jasmine.jpg', price: 35 },
-    { name: 'Bougainvillea', latin: 'Bougainvillea glabra', link: '/bougainvillea.html', image: '/images/bougainvillea.jpg', price: 40 },
-    { name: 'Gardenia', latin: 'Gardenia jasminoides', link: '/gardenia.html', image: '/images/gardenia.jpg', price: 42 },
-    { name: 'Lavender', latin: 'Lavandula angustifolia', link: '/lavender.html', image: '/images/lavender.jpg', price: 30 },
-    { name: 'Begonia', latin: 'Begonia rex', link: '/begonia.html', image: '/images/begonia.jpg', price: 25 },
-    { name: 'Camellia', latin: 'Camellia japonica', link: '/camellia.html', image: '/images/camellia.jpg', price: 55 },
-    { name: 'Geranium', latin: 'Pelargonium graveolens', link: '/geranium.html', image: '/images/geranium.jpg', price: 20 },
-    { name: 'Petunia', latin: 'Petunia hybrida', link: '/petunia.html', image: '/images/petunia.jpg', price: 18 },
-    { name: 'Marigold', latin: 'Tagetes erecta', link: '/marigold.html', image: '/images/marigold.jpg', price: 15 },
+    { name: 'Peace Lily', latin: 'Spathiphyllum wallisii', link: 'peace-lily.html', image: 'peace-lily.jpg', price: 32 },
+    { name: 'African Violet', latin: 'Saintpaulia ionantha', link: 'african-violet.html', image: 'african-violet.jpg', price: 28 },
+    { name: 'Hibiscus', latin: 'Hibiscus rosa-sinensis', link: 'hibiscus.html', image: 'hibiscus.jpg', price: 45 },
+    { name: 'Orchid', latin: 'Phalaenopsis', link: 'orchid.html', image: 'orchid.jpg', price: 50 },
+    { name: 'Anthurium', latin: 'Anthurium andraeanum', link: 'anthurium.html', image: 'anthurium.jpg', price: 38 },
+    { name: 'Jasmine', latin: 'Jasminum polyanthum', link: 'jasmine.html', image: 'jasmine.jpg', price: 35 },
+    { name: 'Bougainvillea', latin: 'Bougainvillea glabra', link: 'bougainvillea.html', image: 'bougainvillea.jpg', price: 40 },
+    { name: 'Gardenia', latin: 'Gardenia jasminoides', link: 'gardenia.html', image: 'gardenia.jpg', price: 42 },
+    { name: 'Lavender', latin: 'Lavandula angustifolia', link: 'lavender.html', image: 'lavender.jpg', price: 30 },
+    { name: 'Begonia', latin: 'Begonia rex', link: 'begonia.html', image: 'begonia.jpg', price: 25 },
+    { name: 'Camellia', latin: 'Camellia japonica', link: 'camellia.html', image: 'camellia.jpg', price: 55 },
+    { name: 'Geranium', latin: 'Pelargonium graveolens', link: 'geranium.html', image: 'geranium.jpg', price: 20 },
+    { name: 'Petunia', latin: 'Petunia hybrida', link: 'petunia.html', image: 'petunia.jpg', price: 18 },
+    { name: 'Marigold', latin: 'Tagetes erecta', link: 'marigold.html', image: 'marigold.jpg', price: 15 },
 ];
 
 // Function to Display the List of Plants

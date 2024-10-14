@@ -1,19 +1,19 @@
 // Category: New Plants
 const newPlants = [
-    { name: 'Bird’s Nest Fern', latin: 'Asplenium nidus', link: '/birds-nest-fern.html', image: '/images/birds-nest-fern.jpg', price: 35 }, // New
-    { name: 'Majesty Palm', latin: 'Ravenea rivularis', link: '/majesty-palm.html', image: '/images/majesty-palm.jpg', price: 45 }, // New
-    { name: 'Prayer Plant', latin: 'Maranta leuconeura', link: '/prayer-plant.html', image: '/images/prayer-plant.jpg', price: 25 }, // New
-    { name: 'Chinese Evergreen', latin: 'Aglaonema commutatum', link: '/chinese-evergreen.html', image: '/images/chinese-evergreen.jpg', price: 28 }, // New
-    { name: 'Kentia Palm', latin: 'Howea forsteriana', link: '/kentia-palm.html', image: '/images/kentia-palm.jpg', price: 60 }, // New
-    { name: 'Cordyline', latin: 'Cordyline fruticosa', link: '/cordyline.html', image: '/images/cordyline.jpg', price: 30 }, // New
-    { name: 'Bird of Paradise (White)', latin: 'Strelitzia nicolai', link: '/white-bird-of-paradise.html', image: '/images/white-bird-of-paradise.jpg', price: 65 }, // New
-    { name: 'Hibiscus (Yellow)', latin: 'Hibiscus rosa-sinensis', link: '/hibiscus-yellow.html', image: '/images/hibiscus-yellow.jpg', price: 20 }, // New
-    { name: 'String of Dolphins', latin: 'Senecio peregrinus', link: '/string-of-dolphins.html', image: '/images/string-of-dolphins.jpg', price: 22 }, // New
-    { name: 'Fishbone Cactus', latin: 'Epiphyllum anguliger', link: '/fishbone-cactus.html', image: '/images/fishbone-cactus.jpg', price: 35 }, // New
-    { name: 'Fairy Castle Cactus', latin: 'Acanthocereus tetragonus', link: '/fairy-castle-cactus.html', image: '/images/fairy-castle-cactus.jpg', price: 30 }, // New
-    { name: 'Mistletoe Cactus', latin: 'Rhipsalis baccifera', link: '/mistletoe-cactus.html', image: '/images/mistletoe-cactus.jpg', price: 18 }, // New
-    { name: 'Lemongrass', latin: 'Cymbopogon citratus', link: '/lemongrass.html', image: '/images/lemongrass.jpg', price: 15 }, // New
-    { name: 'Corn Plant', latin: 'Dracaena fragrans', link: '/corn-plant.html', image: '/images/corn-plant.jpg', price: 45 }, // New
+    { name: 'Bird’s Nest Fern', latin: 'Asplenium nidus', link: 'birds-nest-fern.html', image: 'birds-nest-fern.jpg', price: 35 }, // New
+    { name: 'Majesty Palm', latin: 'Ravenea rivularis', link: 'majesty-palm.html', image: 'majesty-palm.jpg', price: 45 }, // New
+    { name: 'Prayer Plant', latin: 'Maranta leuconeura', link: 'prayer-plant.html', image: 'prayer-plant.jpg', price: 25 }, // New
+    { name: 'Chinese Evergreen', latin: 'Aglaonema commutatum', link: 'chinese-evergreen.html', image: 'chinese-evergreen.jpg', price: 28 }, // New
+    { name: 'Kentia Palm', latin: 'Howea forsteriana', link: 'kentia-palm.html', image: 'kentia-palm.jpg', price: 60 }, // New
+    { name: 'Cordyline', latin: 'Cordyline fruticosa', link: 'cordyline.html', image: 'cordyline.jpg', price: 30 }, // New
+    { name: 'Bird of Paradise (White)', latin: 'Strelitzia nicolai', link: 'white-bird-of-paradise.html', image: 'white-bird-of-paradise.jpg', price: 65 }, // New
+    { name: 'Hibiscus (Yellow)', latin: 'Hibiscus rosa-sinensis', link: 'hibiscus-yellow.html', image: 'hibiscus-yellow.jpg', price: 20 }, // New
+    { name: 'String of Dolphins', latin: 'Senecio peregrinus', link: 'string-of-dolphins.html', image: 'string-of-dolphins.jpg', price: 22 }, // New
+    { name: 'Fishbone Cactus', latin: 'Epiphyllum anguliger', link: 'fishbone-cactus.html', image: 'fishbone-cactus.jpg', price: 35 }, // New
+    { name: 'Fairy Castle Cactus', latin: 'Acanthocereus tetragonus', link: 'fairy-castle-cactus.html', image: 'fairy-castle-cactus.jpg', price: 30 }, // New
+    { name: 'Mistletoe Cactus', latin: 'Rhipsalis baccifera', link: 'mistletoe-cactus.html', image: 'mistletoe-cactus.jpg', price: 18 }, // New
+    { name: 'Lemongrass', latin: 'Cymbopogon citratus', link: 'lemongrass.html', image: 'lemongrass.jpg', price: 15 }, // New
+    { name: 'Corn Plant', latin: 'Dracaena fragrans', link: 'corn-plant.html', image: 'corn-plant.jpg', price: 45 }, // New
 ];
 
 
