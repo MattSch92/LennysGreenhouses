@@ -701,3 +701,93 @@ body {
     
     /* Add any additional mobile-specific styles here */
 }
+
+/* Mobile Styles */
+@media (max-width: 1280px) {
+    
+    .top-banner {
+        padding: 20px 20px; /* Reduce padding */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    .banner-content {
+        flex-direction: column; /* Stack logo and cart link vertically */
+        align-items: center; /* Center items */
+    }
+
+    .logo img {
+        height: 15vh; /* Smaller logo for mobile */
+        width: auto; /* Maintain aspect ratio */
+        left: 7rem;
+        top: 1.4rem;
+    }
+
+    .socials i {
+        align-items: center;
+    }
+
+    .cart-link {
+        position: relative; /* Change positioning */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .dropdown {
+        position: relative; /* Adjust dropdown positioning */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .navbar a {
+        padding: 10px 0; /* Adjust padding for links */
+        font-size: 2.5vh; /* Adjust font size */
+    }
+
+    .search-bar {
+        flex-direction: column; /* Stack search bar elements vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .search-bar input[type="text"] {
+        width: 90%; /* Full width on mobile */
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+
+    .search-bar button {
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+
+    .company-info .list {
+        display: none;
+        color: red;
+    }
+
+    .plant-categories {
+        flex-direction: column; /* Stack plant categories vertically */
+        padding: 10px; /* Adjust padding */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .plant-category img {
+        width: 50%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+    .image-wrapper {
+        width: 100%; /* Full width for mobile */
+        height: 15%;
+
+    }
+
+    .image-links a {
+        font-size: 2vh; /* Adjust font size for mobile */
+        padding: 10px; /* Adjust padding */
+    }
+    
+    /* Add any additional mobile-specific styles here */
+}
