@@ -22,7 +22,7 @@ body {
 .top-banner {
     background-color: rgb(48, 125, 74);
     padding: 1.5rem;
-    border: .3rem solid bisque;
+    border: 0.3rem solid bisque;
     font-family: "Edu SA Beginner", cursive;
 }
 
@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .3rem;
+    padding: 0.3rem;
     font-size: 1.5rem;
 }
 
@@ -53,12 +53,12 @@ body {
 
 .cart-link i {
     color: whitesmoke;
-    transition: transform 0.3s ease ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .cart-link:hover i {
     transform: scale(1.5);
-    transition: transform 0.3s ease ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .dropdown {
@@ -73,9 +73,9 @@ body {
     background-color: rgb(48, 125, 74);
     color: rgb(201, 230, 161);
     width: 25rem;
-    box-shadow: 2rem 2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.2);
     z-index: 1;
-    border: .35rem solid black;
+    border: 0.35rem solid black;
 }
 
 .dropdown-content a {
@@ -98,24 +98,16 @@ body {
     background-color: rgb(48, 125, 74);
     color: whitesmoke;
     cursor: pointer;
-    border:  solid rgb(48, 125, 74);
+    border: solid rgb(48, 125, 74);
     font-family: "Ubuntu", cursive;
     font-size: 1rem;
 }
 
-#login-form {
+#login-form, #register-form {
     padding: 1rem;
     background-color: rgb(48, 125, 74);
     border-radius: 1rem;
-    box-shadow: 2rem 2rem 2rem 2rem rgba(0, 0, 0, 0.1);
-    z-index: 2;
-}
-
-#register-form {
-    padding: 15px;
-    background-color: rgb(48, 125, 74);
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.1);
     z-index: 2;
 }
 
@@ -137,7 +129,7 @@ body {
 #login-form button, #register-form button {
     padding: 10px 15px;
     background-color: rgb(7, 45, 58);
-    color: rgb(201, 230, 161, .5);
+    color: rgba(201, 230, 161, 0.5);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -147,10 +139,6 @@ body {
 
 #login-form button:hover, #register-form button {
     background-color: rgb(48, 125, 74);
-}
-
-#show-login, #show-register {
-    font-weight: bold;
 }
 
 #logout-button {
@@ -163,8 +151,6 @@ body {
     font-family: "Edu SA Beginner", cursive;
     font-weight: bold;
 }
-
-
 
 /* *** *** *** *** *** *** Company Information *** *** *** *** *** */
 .company-info {
@@ -191,10 +177,9 @@ body {
     display: flex;
     align-items: center;
     color: whitesmoke;
-    gap: .8rem;
+    gap: 0.8rem;
 }
 
-/* leaf icon */
 .list li i.fa-envira {
     font-size: 1.5rem;
     color: whitesmoke;
@@ -212,7 +197,7 @@ body {
 
 .introtext {
     font-size: 1.4rem;
-    padding-bottom: .8rem;
+    padding-bottom: 0.8rem;
     color: rgb(201, 230, 161);
 }
 
@@ -276,6 +261,67 @@ body {
 .search-bar button:hover {
     background-color: #555;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .logo img {
+        width: 12rem;
+        height: 12rem;
+        top: 2rem;
+        left: 10rem;
+    }
+    
+    .search-bar {
+        padding-left: 20rem;
+    }
+
+    .list {
+        right: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 10rem;
+        height: 10rem;
+        top: 1.5rem;
+        left: 5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .list {
+        position: static;
+        margin: 0;
+    }
+
+    .cart-link {
+        left: 5rem;
+    }
+
+    .search-bar {
+        padding-left: 5rem;
+        width: 100%;
+    }
+
+    .plant-categories {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .plant-category img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 .dropdown-results {
     position: absolute;
@@ -556,6 +602,99 @@ body {
 }
 
 /* Mobile Styles */
+@media (max-width: 360px) {
+    .top-banner {
+        padding: 20px 10px; /* Reduce padding */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+    }
+
+    .banner-content {
+        flex-direction: column; /* Stack logo and cart link vertically */
+        align-items: center; /* Center items */
+    }
+
+    .logo img {
+        height: 15vh; /* Smaller logo for mobile */
+        width: auto; /* Maintain aspect ratio */
+        left: 7rem;
+        top: 1.4rem;
+    }
+
+    .socials i {
+        align-items: center;
+    }
+
+    .cart-link {
+        position: relative; /* Change positioning */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .dropdown {
+        position: relative; /* Adjust dropdown positioning */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .navbar a {
+        padding: 10px 0; /* Adjust padding for links */
+        font-size: 2.5vh; /* Adjust font size */
+    }
+
+    .search-bar {
+        flex-direction: column; /* Stack search bar elements vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .search-bar input[type="text"] {
+        width: 90%; /* Full width on mobile */
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+
+    .search-bar button {
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+
+    .company-info .list {
+        display: none;
+        color: red;
+    }
+
+    .plant-categories {
+        flex-direction: column; /* Stack plant categories vertically */
+        padding: 10px; /* Adjust padding */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .plant-category img {
+        width: 98%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .image-gallery {
+        display: none; /* hides the image gallery */
+    }
+
+    .image-wrapper {
+        width: 20%; /* Full width for mobile */
+        height: 15%;
+
+    }
+
+    .image-links a {
+        font-size: 2vh; /* Adjust font size for mobile */
+        padding: 10px; /* Adjust padding */
+    }
+    
+    /* Add any additional mobile-specific styles here */
+}
+
+
+/* Mobile Styles */
 @media (max-width: 768px) {
     .top-banner {
         padding: 20px 20px; /* Reduce padding */
@@ -576,7 +715,7 @@ body {
     }
 
     .socials i {
-        align-items: center;
+        display: none;
     }
 
     .cart-link {
@@ -775,7 +914,7 @@ body {
     }
 
     .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
+        flex-direction: flex; /* Stack navbar items vertically */
         padding: 10px; /* Adjust padding */
     }
 
@@ -860,6 +999,8 @@ body {
     .cart-link {
         position: relative; /* Change positioning */
         margin-top: 10px; /* Add spacing */
+        padding-top: 2rem;
+        padding-left: 20rem;
     }
 
     .dropdown {
@@ -868,7 +1009,7 @@ body {
     }
 
     .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
+        flex-direction: flex; /* Stack navbar items vertically */
         padding: 10px; /* Adjust padding */
     }
 
@@ -899,12 +1040,13 @@ body {
     .plant-categories {
         flex-direction: flex; /* Stack plant categories vertically */
         padding: 10px; /* Adjust padding */
-        gap: 10px; /* Reduce gap */
-        width: 100%;
+        gap: 100px; /* Reduce gap */
+        width: 92%;
+        align-items: center;
     }
 
     .plant-category img {
-        width: 80%; /* Full width for images */
+        width: 96%; /* Full width for images */
         height: 80%; /* Maintain aspect ratio */
     }
 
@@ -916,7 +1058,6 @@ body {
     .image-wrapper {
         width: 100%; /* Full width for mobile */
         height: 15%;
-
     }
 
     .image-links a {

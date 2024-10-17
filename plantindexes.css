@@ -349,20 +349,17 @@ body {
     font-family: "Ubuntu", sans-serif;
     color: white;
     border: 5px solid bisque;
-    display: flex;
-    justify-content: center;
 }
 
 .product-container {
     display: flex;
     align-items: flex-start;
     max-width: 1000px;
-    margin-left: 0 auto;
+    margin-left: 380px;
     background-color: rgb(7, 45, 58);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
 }
 
 .product-image {
@@ -379,7 +376,6 @@ body {
 
 .product-details {
     flex: 2;
-    text-align: left;
 }
 
 .product-details h3 {
@@ -387,7 +383,7 @@ body {
 }
 
 .product-details p {
-    line-height: 1.6;
+    line-height: 25px;
 }
 
 .product-price {
@@ -396,43 +392,11 @@ body {
     font-size: 2vh;
 }
 
-.cart-controls {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+.add-to-cart {
+    font-weight: bold;
 }
-
-.quantity-selector {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.quantity-input {
-    width: 40px;
-    text-align: center;
-}
-
-.add-to-cart,
 .add-to-favorites {
     font-weight: bold;
-    padding: 10px 20px;
-    background-color: rgb(48, 125, 74);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.add-to-cart:hover,
-.add-to-favorites:hover {
-    background-color: rgb(7, 45, 58);
-}
-
-.add-to-favorites {
-    margin-top: 10px;
 }
 
 .quantity-input {
@@ -616,33 +580,7 @@ body {
         color: red;
     }
 
-    .Product-Information {
-        padding: 10px;
-    }
-
-    .product-container {
-        flex-direction: column; /* Stack image and details vertically */
-        align-items: center; /* Center align content */
-        padding: 10px; /* Adjust padding */
-    }
-
-    .product-image {
-        padding-right: 0; /* Remove extra padding on mobile */
-    }
-
-    .product-image img {
-        width: 80%; /* Adjust image width for mobile */
-        max-width: 300px; /* Set a max width to avoid stretching */
-    }
-
-    .product-details {
-        text-align: center; /* Center text on mobile */
-        padding-top: 20px; /* Add space between image and text */
-    }
-
-    .cart-controls {
-        flex-direction: column; /* Stack controls vertically on mobile */
-    }
+    
 
     .plant-categories {
         flex-direction: column; /* Stack plant categories vertically */
