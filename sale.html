@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lenny's Greenhouses</title>
+        <title>Tropicals - Lenny's Greenhouses</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="plantindexes.css"> <!---->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,9 +84,10 @@
                 </li>
                 <li>
                     <i class="fa-brands fa-envira"></i>
-                    <a href="newsletter.html">Sign up for our newsletter here</a>
+                    <a href="/Main/newsletter.html">Sign up for our newsletter here</a>
                 </li>
             </ul>
+            
 
             <div class="introtext">
                 <p>
@@ -103,7 +104,7 @@
 
             <!-- Search Bar -->
             <div class="search-bar">
-                <input type="text" id="plant-search" placeholder="Search for plants here..." onkeyup="searchPlants()" autocomplete="off">
+                <input type="text" id="plant-search" placeholder="Search products here..." onkeyup="searchPlants()" autocomplete="off">
                 <div id="results" class="dropdown-results"></div>
                 <button type="submit">Search</button>
             </div>
@@ -111,6 +112,7 @@
 
         <!-- Navbar -->
         <nav class="navbar">
+            <a href="index.html">Home</a>
             <a href="newplants.html">New</a>
             <a href="tropicals.html">Tropicals</a>
             <a href="flowering.html">Flowering</a>
@@ -120,60 +122,35 @@
             <a href="all.html">All</a>
         </nav>
 
-        <!-- Image Gallery -->
-        <section class="image-gallery">
-            <div class="gallery-wrapper">
-                <button id="prev" class="gallery-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                <div class="gallery-container">
-                    <div class="image-slider">
-                        <!-- Image 1 -->
-                        <div class="image-wrapper">
-                            <img src="hibiscus-yellow.jpg" alt="slide 1">
-                            <div class="image-info">
-                                <h1>Hibiscus (Yellow)</h1>
-                                <h2>Hibiscus rosa-sinensis</h2>
-                            </div>
-                            <div class="image-links">
-                                <a href="hibiscus-yellow.html">See More<i class="fa-solid fa-chevron-right"></i></a>
-                                <a href="newplants.html">New Arrivals<i class="fa-solid fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- Image 2-->
-                        <div class="image-wrapper">
-                            <img src="bird-of-paradise.jpg" alt="slide 2">
-                            <div class="image-info">
-                                <h1>Bird of Paradise</h1>
-                                <h2>Strelitzia reginae</h2>
-                            </div>
-                            <div class="image-links">
-                                <a href="bird-of-paradise.html">See More<i class="fa-solid fa-chevron-right"></i></a>
-                                <a href="tropicals.html">Tropicals<i class="fa-solid fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- Image 3 -->
-                        <div class="image-wrapper">
-                            <img src="christmas-cactus.jpg" alt="slide 3">
-                            <div class="image-info">
-                                <h1>Christmas Cactus</h1>
-                                <h2>Schlumbergera bridgesii</h2>
-                            </div>
-                            <div class="image-links">
-                                <a href="christmas-cactus.html">See More<i class="fa-solid fa-chevron-right"></i></a>
-                                <a href="succulents.html">Succulents<i class="fa-solid fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button id="next" class="gallery-btn"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
+<!-- *** *** *** *** *** *** *** ADD NEW CODE HERE *** *** *** *** *** -->
+ 
+<section class="Product-Information">
+    <h1>Browse our collection of tropical plants</h1>
 
-            <!-- Indicator bar for slides -->
-            <div class="indicator-bar">
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-            </div>
-        </section>
+    <div class="sort-options">
+        <label for="sort">Sort By:</label>
+        <select id="sort" onchange="sortPlants()">
+            <option value="alphabetical">Alphabetical Order</option>
+            <option value="price-low-to-high">Price: Low to High</option>
+            <option value="price-high-to-low">Price: High to Low</option>
+        </select>
+    </div>
+
+    <div id="plant-list" class="plant-list">
+        <!-- plants will be added here with javascript -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- *** *** *** *** *** *** *** END OF NEW CODE *** *** *** *** *** -->  
+        
 
         <!-- Plant Categories -->
         <section class="plant-categories">
@@ -199,9 +176,9 @@
         </section>
 
         <!-- SCRIPTS -->
-        <script src="scripts.js"></script>
         <script src="search.js"></script>
         <script src="auth.js"></script>
+        <script src="tropicalsort.js"></script>
 
     </body>
 
